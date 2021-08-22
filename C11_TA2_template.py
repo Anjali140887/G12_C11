@@ -22,15 +22,10 @@ def gravity():
     global speed
     speed=speed+g
     bird.y=bird.y+speed
-    
-def display():
-    global speed
-    print(speed)
 
 while True:
     screen.blit(images["bg1"],[0,0])
     gravity()
-    display()
     groundx-=5
     if groundx < -330:
         groundx=0
